@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" metadata-complete="false" version="3.1">
+  <display-name>web-application-no-framework</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <!-- Jersey Servlet -->
+  <servlet>
+  	<servlet-name>JerseyServlet</servlet-name>
+  	<servlet-class>org.glassfish.jersey.servlet.ServletContainer</servlet-class>
+  	<init-param>
+  		<param-name>jersey.config.server.provider.packages</param-name>
+  		<param-value>com.brasajava</param-value>
+  	</init-param>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>JerseyServlet</servlet-name>
+  	<url-pattern>/ws/*</url-pattern>
+  </servlet-mapping>
+  <!-- Jersey Servlet -->
+  
+  <!-- First Servlet -->
+  <servlet>
+    <servlet-name>firstServlet</servlet-name>
+    <servlet-class>com.brasajava.servlets.MyFirstServlet</servlet-class>
+    <init-param>
+      <param-name>servletCreator</param-name>
+      <param-value>Ricardo Maximino Gonçalves de Moraes</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>firstServlet</servlet-name>
+    <url-pattern>/first/*</url-pattern>
+  </servlet-mapping>
+  <!-- First Servlet -->
+  <!--  
+  <error-page>
+    <exception-type>java.lang.Exception</exception-type>
+    <location>/error.jsp</location>
+  </error-page>
+  <error-page>
+    <error-code>404</error-code>
+    <location>/404.jsp</location>
+  </error-page>
+  -->
+</web-app>
