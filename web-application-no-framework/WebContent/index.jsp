@@ -18,6 +18,11 @@
       
       <input type="submit" value="send" />
     </form>
+	<a href="http://localhost:8080/web-application-no-framework/ws/rest/hello"> hello </a><br/>
+	<a href="http://localhost:8080/web-application-no-framework/ws/rest/param/myParam"> parameter </a><br/>
+	<a href="http://localhost:8080/web-application-no-framework/ws/rest/context"> context </a><br/>
 	
+	<a href="http://localhost:8080/web-application-no-framework/ws/contacts"> GET contacts </a><br/>
+	<a href="http://localhost:8080/web-application-no-framework/ws/contacts/1"> GET contact with id = 1 </a><br/>
 </body>
 </html>
