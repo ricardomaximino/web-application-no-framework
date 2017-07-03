@@ -35,13 +35,13 @@ public class MySecondServlet extends HttpServlet {
 		System.out.println("Action = " + action + " in My Second Servlet");
 		request.setAttribute("contactDao", new ContactDao());
 		if (action.equals("contact")) {
-			request.getRequestDispatcher("/home2.jsp").forward(request, response);
+			request.getRequestDispatcher("/home2.xhtml").forward(request, response);
 			return;
 		} if (action.equals("hide")) {
-			request.getRequestDispatcher("/WEB-INF/view/hide.jsp").forward(request, response);
+			request.getRequestDispatcher("/WEB-INF/view/hide.xhtml").forward(request, response);
 			return;
 		}else {
-			request.getRequestDispatcher("/404.jsp").forward(request, response);
+			request.getRequestDispatcher("/404.xhtml").forward(request, response);
 		}
 	}
 

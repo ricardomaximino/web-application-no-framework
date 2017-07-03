@@ -2,7 +2,7 @@
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" metadata-complete="false" version="3.1">
   <display-name>web-application-no-framework</display-name>
   <welcome-file-list>
-    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.xhtml</welcome-file>
   </welcome-file-list>
   <!-- Jersey Servlet -->
   <servlet>
@@ -36,11 +36,11 @@
   <!--  
   <error-page>
     <exception-type>java.lang.Exception</exception-type>
-    <location>/error.jsp</location>
+    <location>/error.xhtml</location>
   </error-page>
   <error-page>
     <error-code>404</error-code>
-    <location>/404.jsp</location>
+    <location>/404.xhtml</location>
   </error-page>
   -->
 </web-app>

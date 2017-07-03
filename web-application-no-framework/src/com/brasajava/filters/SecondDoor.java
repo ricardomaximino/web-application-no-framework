@@ -20,7 +20,7 @@ public class SecondDoor implements Filter {
      * Default constructor. 
      */
     public SecondDoor() {
-        // TODO Auto-generated constructor stub
+        
     }
 
 	/**
