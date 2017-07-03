@@ -57,29 +57,17 @@
 			<artifactId>hibernate-core</artifactId>
 			<version>5.2.10.Final</version>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/org.apache.derby/derby -->
-<<<<<<< HEAD
-		<dependency>
-			<groupId>org.apache.derby</groupId>
-			<artifactId>derby</artifactId>
-			<version>10.13.1.1</version>
-		</dependency>
-		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java 
-=======
->>>>>>> branch 'master' of https://github.com/ricardomaximino/web-application-no-framework.git
-		<dependency>
-			<groupId>org.apache.derby</groupId>
-			<artifactId>derby</artifactId>
-			<version>10.13.1.1</version>
-		</dependency>
-<<<<<<< HEAD
-		-->
-=======
-		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java <dependency> 
-			<groupId>mysql</groupId> <artifactId>mysql-connector-java</artifactId> <version>5.1.6</version> 
+		<!-- https://mvnrepository.com/artifact/org.apache.derby/derby <dependency> 
+			<groupId>org.apache.derby</groupId> <artifactId>derby</artifactId> <version>10.13.1.1</version> 
 			</dependency> -->
 
->>>>>>> branch 'master' of https://github.com/ricardomaximino/web-application-no-framework.git
+		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.6</version>
+		</dependency>
+
 	</dependencies>
 	<build>
 		<finalName>webNoFrameWork</finalName>
